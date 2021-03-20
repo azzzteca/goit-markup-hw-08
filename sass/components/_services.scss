@@ -1,0 +1,44 @@
+.services {
+  padding-bottom: 94px;
+}
+  
+.services__list {
+  display: flex;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: -30px;
+  margin-bottom: 0;
+}
+  
+.services__item {
+  position: relative;
+  
+  margin-left: 30px;
+}
+  
+.services__title {
+  margin-bottom: 50px;
+}
+  
+.services__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  width: 370px;
+  height: 70px;
+  
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 27px 0;
+  text-align: center;
+  
+  background-color: rgba(47, 48, 58, 0.8);
+}
+  
+.services__text {
+  margin: 0;
+}

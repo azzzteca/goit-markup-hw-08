@@ -1,0 +1,42 @@
+.filters {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+    
+.filters__buttons {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+    
+.filters__list {
+  display: flex;
+ 
+  justify-content: center;
+}
+    
+.filters__item + .filters__item {
+  margin-left: 8px;
+}
+    
+.filters__button {
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+  border-radius: 4px;
+    
+  background-color: $buttons-color;
+  font-family: inherit;
+  border: none;
+  color: $main-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  &:hover,
+  &:focus {
+    background-color: $firm-color;
+    color: #ffffff;
+  }
+
+}  
+    
