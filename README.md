@@ -1,9 +1,6 @@
-Проект
-«A1» Используется методология BEM.
 
-«A2» Ипользуется препроцессов SASS.
 
-«A3» В файлах index.html и portfolio.html подключен минифицированный файл стилей main.min.css из папки css.
+
 
 «A4» При просмотре страницы на любом устройстве шириной от 320px, не появляется горизонтальная полоса прокрутки.
 
@@ -30,3 +27,52 @@
 «C4» Вёрстка выполнена относительно трёх точек перелома: 480px, 768px и 1200px.
 
 «C5» Выполнено оформление мобильного меню.
+
+
+
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+  
+.advantages__list {
+  display: flex;
+  
+  margin-left: -30px;
+}
+  
+.advantages__power {
+  flex-basis: calc( 100% / 4 - 30px);
+  margin-left: 30px;
+}
+  
+.advantages__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  width: 270px;
+  height: 120px;
+  background-color: $buttons-color;
+}
+  
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 9.01px;
+  color: $main-color;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+  
+.advantages__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  
+  color: $secondary-color;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
