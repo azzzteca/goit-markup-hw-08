@@ -41,3 +41,20 @@
   }
 }
 
+.logo {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+
+  }
+
+
+}

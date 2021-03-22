@@ -1,23 +1,50 @@
 .subscribe {
-  margin-left: 93px;
+  // margin-left: 93px;
   
-  width: 570px;
+  // width: 570px;
+
+  // width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
   
-.subscribe__header {
-  margin: 0;
-  padding-top: 12px;
-  padding-bottom: 20px;
+.subscribe__title {
+  margin-top: 0px;
+  margin-bottom: 20px;
   
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
+
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    margin-top: 0;
+    text-align: start;
+  }
+
 }
   
 .subscribe__form {
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  width: 100%;
 
   &::placeholder {
     font-size: 16px;
@@ -26,12 +53,18 @@
     
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+    flex-direction: row;
+  }
 }
   
 .subscribe__email--input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   
+  margin-bottom: 20px;
   padding: 15px 16px;
   
   border: 1px solid rgba(255,255,255,0.3);
@@ -39,6 +72,17 @@
   
   background-color: inherit;
   color: #FFFFFF;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+
 }
   
 .subscribe__email--label {
@@ -57,11 +101,14 @@
   
 .subscribe__button {
   position: relative;
-  
-  display: inline-block;
+  width: 200px;
+  // display: flex;
+ 
+  margin: 0 auto;
 
   &--submit {
-    width: 200px;
+    
+    width: 100%;
     height: 50px;
     
     padding: 10px 29px;
@@ -70,6 +117,10 @@
     border: 0;
     border-radius: 4px;
     
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
     color: #FFFFFF;
     background-color: $firm-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

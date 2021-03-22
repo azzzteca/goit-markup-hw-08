@@ -1,11 +1,13 @@
 .team {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-
   padding-top: 60px;
   padding-bottom: 60px;
     
   background-color: $buttons-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
   
 .team__container {
@@ -15,8 +17,6 @@
 .team__list {
   display: flex;
   flex-wrap: wrap;
-  // flex-basis: calc(100% / 4 - 30px);
-  // margin-left: -30px;
 
   @media screen and (min-width: 768px) {
     margin-top: -30px;
@@ -26,9 +26,6 @@
 }
   
 .team__card {
-  // margin-left: 30px;
-    
-  // width: 100%;
   background-color: white;
   
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -54,13 +51,19 @@
     &:not(:last-child) {
       margin-bottom: 0px;
     }
+
+    padding-bottom: 30px;
+
   }
 }
   
 .team__title {
-  // margin-bottom: 50px;
   margin-bottom: 30px;
 
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+
+  }
 }
   
 .team__member {
@@ -84,18 +87,15 @@
 
   @media screen and (min-width: 1200px) {
     width: 270px;
-    
   }
-  
 }
   
 .team__skill {
   margin-top: 0;
   margin-bottom: 16px;
-
-  // margin-bottom: 30px;
   
   color: $secondary-color;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;

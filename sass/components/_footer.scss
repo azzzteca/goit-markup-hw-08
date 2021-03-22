@@ -3,28 +3,24 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-  
-.footer__items {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+
+.footer__container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
-  
-.footer__address {
-  font-style: normal; 
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.714;
-  
-  padding: 0;
-  max-width: 231px;
-  margin-right: 70px;
-}
-  
+
 .footer__logo {
-  display: block;
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 
   &--web {
     color: $firm-color;
@@ -34,13 +30,55 @@
     color: #ffffff;
   }
 
+  @media screen and (min-width: 1200px) {
+    justify-content: start;
+
+  }
+
+}
+
+.footer__contacts {
+  // padding-left: 0;
+}
+  
+.footer__address {
+  width: 100%;
+
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+
+  color: #ffffff;
+
+  padding: 0;
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
+  // max-width: 231px;
+  // margin-right: 70px;
+}
+  
+.footer__contact {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
   
 
-  
-.footer__item + .footer__item{
-  padding-top: 9px;
-}
+// .footer__contact {
+//   &:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
   
 .footer__mail {
   color: rgba(255, 255, 255, 0.6);
@@ -65,34 +103,47 @@
     color: $firm-color;
   }
 }
+
   
-.footer__container {
-  display: flex;
+.footer__join {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
 }
-  
+
 .footer__title {
-  margin: 0;
-  padding-top: 12px;
-  padding-bottom: 20px;
-  align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
   
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
   
-.footer__units {
+.footer__socials {
   display: flex;
   flex-basis: calc( 100% / 4 - 10px);
   margin-left: -10px;
   margin-top: 0;
-  margin-bottom: 0;
   padding: 0;
-}
+
+  justify-content: center;}
   
-.footer__unit {
+.footer__social {
   margin-left: 10px;
   
   border-radius: 50%;
