@@ -1351,14 +1351,45 @@ textarea {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .projects__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
 .projects__card {
-  margin-bottom: 30px;
   /* Тень при наведении на карточку товара */
 }
 
-.projects__card:hover, .projects__card:focus {
+.projects__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__card {
+    width: 354px;
+    height: 404px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.projects__card:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__card:hover, .projects__card:focus {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .projects__thumb {
@@ -1370,6 +1401,13 @@ textarea {
 .projects__img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__img {
+    width: 354px;
+    height: 294px;
+  }
 }
 
 .projects__card:hover .projects__text--hidden {
@@ -1425,8 +1463,8 @@ textarea {
   text-align: left;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
