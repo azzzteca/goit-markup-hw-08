@@ -1343,6 +1343,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 50px;
+  }
+}
+
 .filters__item:not(:last-child) {
   margin-right: 8px;
 }
