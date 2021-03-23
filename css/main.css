@@ -1314,6 +1314,13 @@ textarea {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .filters__buttons {
   margin-top: 0;
   margin-bottom: 50px;
@@ -1380,6 +1387,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .projects__card {
+    width: 370px;
+  }
+}
+
 .projects__card:hover {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -1389,6 +1402,9 @@ textarea {
   .projects__card:hover, .projects__card:focus {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  }
+  .projects__card:nth-child(n+7) {
+    margin-bottom: 0;
   }
 }
 
@@ -1407,6 +1423,12 @@ textarea {
   .projects__img {
     width: 354px;
     height: 294px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__img {
+    width: 370px;
   }
 }
 

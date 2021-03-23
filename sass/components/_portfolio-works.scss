@@ -12,7 +12,6 @@
     
     margin-left: -30px;
     margin-top: -30px;
-    
   }
 
 }
@@ -30,6 +29,10 @@
     margin-top: 30px;
   }
 
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+
   /* Тень при наведении на карточку товара */
   &:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -41,6 +44,10 @@
     
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     } 
+
+    &:nth-child(n+7) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -58,6 +65,10 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 294px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 
