@@ -109,6 +109,30 @@ img {
           align-items: center;
 }
 
+.header__logo {
+  padding: 24px 0 25px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
+.header__logo--web {
+  color: #2196F3;
+}
+
+.header__logo--studio {
+  color: #000000;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -119,9 +143,15 @@ img {
 }
 
 .navigation__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 /* Cоздание эффекта подчеркивания ссылки */
@@ -169,28 +199,37 @@ img {
           transform: translateY(17px);
 }
 
-.header__logo {
-  padding: 24px 0 25px 0;
-  margin-right: 93px;
-}
-
-.header__logo--web {
-  color: #2196F3;
-}
-
-.header__logo--studio {
-  color: #000000;
-}
-
 .contacts__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.contacts__item :last-child {
+  margin-left: 30px;
 }
 
 .contacts__link {

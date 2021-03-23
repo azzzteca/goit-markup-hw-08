@@ -2,7 +2,29 @@
   display: flex;
   align-items: center;
 }
+
+// Лого хедера
+.header__logo {
+  padding: 24px 0 25px 0;
+
+  @media screen and (min-width: 768px){
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  &--web {
+    color: $firm-color;
+  }
+    
+  &--studio {
+    color: #000000;
+  }
+}
   
+// Навигация
 .navigation {
   display: flex;
   align-items: center;
@@ -10,7 +32,12 @@
 }
   
 .navigation__links {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  
 }
   
 /* Cоздание эффекта подчеркивания ссылки */
@@ -64,27 +91,35 @@
   }
 }
   
-// Лого хедера
-.header__logo {
-  padding: 24px 0 25px 0;
-  margin-right: 93px;
 
-  &--web {
-    color: $firm-color;
-  }
-    
-  &--studio {
-    color: #000000;
-  }
-}
 
 // Контакты хедера
 .contacts__list {
-  display: flex;
-  margin-left: auto;}
+  display: none;
+  margin-left: auto;
 
-.contacts__item + .contacts__item {
-  margin-left: 50px;}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+  
+}
+
+.contacts__item {
+  :last-child {
+    margin-left: 30px;
+  }
+}
+// .contacts__item + .contacts__item {
+ 
+// }
+
 
 .contacts__link {
   display: flex;
