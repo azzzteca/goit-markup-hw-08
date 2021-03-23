@@ -36,6 +36,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-right: 84px;
   }
   
 }
@@ -96,24 +97,30 @@
 // Контакты хедера
 .contacts__list {
   display: none;
-  margin-left: auto;
+  // margin-left: auto;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-
   }
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
-  
 }
 
 .contacts__item {
   :last-child {
     margin-left: 30px;
+  }
+
+  @media screen and(min-width: 768px) {
+    width: 100%;
+
+    :last-child {
+      margin-left: unset;
+    }
+
   }
 }
 // .contacts__item + .contacts__item {
@@ -124,8 +131,6 @@
 .contacts__link {
   display: flex;
   height: 16px;
-  justify-content: center;
-  align-items: center;
   
   color: $secondary-color;
   font-size: 14px;
@@ -138,6 +143,13 @@
   &:hover, 
   &:focus {
     color: $firm-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:first-child {
+      margin-bottom: 10px;
+    }
+
   }
 }
 
