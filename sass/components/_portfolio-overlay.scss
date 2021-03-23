@@ -1,8 +1,4 @@
 /* Создание выезжающего блока с информацией */
-.projects__thumb {
-  position: relative;
-  overflow: hidden;
-}
   
 .projects__card--hidden {
   position: absolute;
@@ -35,6 +31,6 @@
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   
-  transform: translateY(101%);
+  transform: translateY(150%);
   transition: transform 250ms $cubic-bezier;
 }

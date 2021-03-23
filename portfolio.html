@@ -14,7 +14,7 @@
 
     <body>
        <!-- Хедер -->
-       <header class="header portfolio__header">
+       <!-- <header class="header portfolio__header">
         <div class="container header__container">
             <nav class="navigation">
                 <a href="./index.html" class="logo header__logo">
@@ -50,12 +50,12 @@
             </ul>
                 
         </div>
-    </header>
+    </header> -->
         
         <main>
             <!--Фильтр наших работ - кнопки-->
             <section class="filters">
-                <div class="container filters__buttons">
+                <!-- <div class="container filters__buttons">
                     <h1 class="visually__hidden title">Фильтр наших работ</h1>
                         <ul class="list filters__list">
                             <li class="filters__item"><button class="filters__button" type="button">Все</button> </li>
@@ -64,7 +64,7 @@
                             <li class="filters__item"><button class="filters__button" type="button">Дизайн</button></li>
                             <li class="filters__item"><button class="filters__button" type="button">Маркетинг</button></li>
                         </ul>
-                </div>
+                </div> -->
 
                     <!-- Наши работы-->
                 
@@ -74,7 +74,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-1.jpg" width="370" alt="Наши веб-сайты">
+                                    <img src="./images/our-works-1.jpg" class="projects__img" alt="Наши веб-сайты">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -92,7 +92,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-2.jpg" width="370" alt="Наши дизайнерские решения">
+                                    <img src="./images/our-works-2.jpg" class="projects__img" alt="Наши дизайнерские решения">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -110,7 +110,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-3.jpg" width="370" alt="Наши приложения">
+                                    <img src="./images/our-works-3.jpg" class="projects__img" alt="Наши приложения">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -128,7 +128,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-4.jpg" width="370" alt="Маркетинг">
+                                    <img src="./images/our-works-4.jpg" class="projects__img" alt="Маркетинг">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -146,7 +146,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-5.jpg" width="370" alt="Наши приложения">
+                                    <img src="./images/our-works-5.jpg" class="projects__img" alt="Наши приложения">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -164,7 +164,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-6.jpg" width="370" alt="Наши веб-сайты">
+                                    <img src="./images/our-works-6.jpg" class="projects__img" alt="Наши веб-сайты">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -182,7 +182,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-7.jpg" width="370" alt="Наши дизайнерские решения">
+                                    <img src="./images/our-works-7.jpg" class="projects__img" alt="Наши дизайнерские решения">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -200,7 +200,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-8.jpg" width="370" alt="Маркетинг">
+                                    <img src="./images/our-works-8.jpg" class="projects__img" alt="Маркетинг">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -218,7 +218,7 @@
                             <li class="projects__card">
                                 <div class="projects__thumb">
 
-                                    <img src="./images/our-works-9.jpg" width="370" alt="Наши приложения">
+                                    <img src="./images/our-works-9.jpg" class="projects__img" alt="Наши приложения">
 
                                     <div class="hidden__card">
                                         <p class="projects__text--hidden">
@@ -244,58 +244,59 @@
 
             <div class="container footer__container">
 
-                <div>
-                    <div class="footer__logo">
-                        <a href="./index.html" class="logo">
-                            <span class="footer__logo--web">Web</span><span class="footer__logo--studio">Studio</span>
-                        </a>
+                   <div>
+                        <div class="footer__logo">
+                            <a href="./index.html" class="logo">
+                                <span class="footer__logo--web">Web</span><span class="footer__logo--studio">Studio</span>
+                            </a>
+                        </div>
+                        
+                        <address class="container footer__address" id="contacts">
+                            <ul class="list footer__contacts">
+                                <li class="footer__contact"> г. Киев, пр-т Леси Украинки, 26</li>
+                                <li class="footer__contact"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></li>
+                                <li class="footer__contact"><a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                            </ul>
+                        </address>
                     </div>
-                    
-                    <address class="container footer__address" id="contacts">
-                        <ul class="footer__items">
-                            <li class="footer__item"> г. Киев, пр-т Леси Украинки, 26</li>
-                            <li class="footer__item"><a class="footer__mail" href="mailto:info@example.com">info@example.com</a></li>
-                            <li class="footer__item"><a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                        </ul>
-                    </address>
-                </div>
+                
             
-                <div>
-                    <h3 class="footer__title">Присоединяйтесь</h3>
-                    <ul class="list footer__units">
-                        <li class="footer__unit">
-                            <a class="footer__link" href="">
-                                <svg width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__unit">
-                            <a class="footer__link" href="">
-                                <svg dth="20" height="20">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__unit">
-                            <a class="footer__link" href="">
-                                <svg idth="20" height="20">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer__unit">
-                            <a class="footer__link" href="">
-                                <svg idth="20" height="20">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <div class="footer__join">
+                        <h3 class="footer__title">Присоединяйтесь</h3>
+                        <ul class="list footer__socials">
+                            <li class="footer__social">
+                                <a class="footer__link" href="">
+                                    <svg width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a class="footer__link" href="">
+                                    <svg dth="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a class="footer__link" href="">
+                                    <svg idth="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__social">
+                                <a class="footer__link" href="">
+                                    <svg idth="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
                 <div class="subscribe">
-                    <h3 class="subscribe__header">Подпишитесь на рассылку</h3>
+                    <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
                     <form class="subscribe__form">
                         <input type="email" name="email" class="subscribe__email--input" placeholder="E-mail">
                         <label for="email" class="subscribe__email--label"></label>
