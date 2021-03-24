@@ -30,49 +30,36 @@
 
 
 
-.advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-  
-.advantages__list {
-  display: flex;
-  
-  margin-left: -30px;
-}
-  
-.advantages__power {
-  flex-basis: calc( 100% / 4 - 30px);
-  margin-left: 30px;
-}
-  
-.advantages__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  
-  width: 270px;
-  height: 120px;
-  background-color: $buttons-color;
-}
-  
-.advantages__title {
-  margin-top: 0;
-  margin-bottom: 9.01px;
-  color: $main-color;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.2;
-}
-  
-.advantages__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  
-  color: $secondary-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7;
-}
+
+    <header class="page-header">
+      <div class="container">
+        <button
+          class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
+          <svg width="24" height="24" fill="currentColor"</svg>
+        </button>
+
+        <ul class="menu">
+          <li><a href="" class="link">О нас</a></li>
+          <li><a href="" class="link">Работы</a></li>
+          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="" class="link">Карьера</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      какой-то текст
+    </main>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg></svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">О нас</a></li>
+        <li><a href="" class="link">Работы</a></li>
+        <li><a href="" class="link">Контакты</a></li>
+        <li><a href="" class="link">Карьера</a></li>
+      </ul>
+    </div>
