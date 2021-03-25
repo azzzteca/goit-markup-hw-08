@@ -312,6 +312,8 @@
 
 .menu__socials {
   display: flex;
+
+ 
  
 }
 
@@ -319,9 +321,12 @@
   &:not(:last-child) {
     margin-right: 20px;
   }
+
+
 }
 
 .socials__item {
+  display: flex;
   text-decoration: none;
 
   font-size: 18px;
@@ -330,5 +335,13 @@
   letter-spacing: 0.02em;
 
   color: $firm-color;
+
+  &::after {
+    content: "";
+    // width: 0;
+    height: 22px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+  }
 
 }

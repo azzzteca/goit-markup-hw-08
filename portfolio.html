@@ -14,9 +14,17 @@
 
     <body>
        <!-- Хедер -->
-       <!-- <header class="header portfolio__header">
+       <header class="header">
+        <!-- Кнопка открытия мобильного меню -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu__svg--open" width="40" height="40">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+
         <div class="container header__container">
             <nav class="navigation">
+
                 <a href="./index.html" class="logo header__logo">
                     <span class="header__logo--web">Web</span><span class="header__logo--studio">Studio</span>
                 </a>
@@ -49,8 +57,35 @@
                 </li>
             </ul>
                 
+            <div class="menu__container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="menu__svg--close" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <ul class="list mobile-menu">
+                    <li class="menu__item"><a class="menu__link menu__link--current" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="menu__link" href="">Контакты</a></li>
+                </ul>
+                <div class="menu__wrapper">
+                    <ul class="list menu__contacts">
+                        <li class="menu__contact"> <a class="menu__contact--tel" href="tel:+380991111111">+38 096 111 11 11</a> </li>
+                        <li class="menu__contact"> <a class="menu__contact--mail" href="mailto:info@devstudio.com">info@devstudio.com</a> </li>
+                    </ul>
+
+                    <ul class="list menu__socials">
+                        <li class="menu__social"><a class="socials__item" href="">Instagram</a></li>
+                        <li class="menu__social"><a class="socials__item" href="">Twitter</a></li>
+                        <li class="menu__social"><a class="socials__item" href="">Facebook</a></li>
+                        <li class="menu__social"><a class="socials__item" href="">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-    </header> -->
+    </header>
         
         <main>
             <!--Фильтр наших работ - кнопки-->
