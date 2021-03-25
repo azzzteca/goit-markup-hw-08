@@ -2,19 +2,22 @@
   display: flex;
   align-items: center;
 
-  position: relative;
+  // position: relative;
 }
 
 // Лого хедера
 .header__logo {
-  padding: 24px 0 25px 0;
+  padding: 16px 0;
 
   @media screen and (min-width: 768px){
     margin-right: 88px;
+    padding: 26px 0;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    padding: 24px 0 25px 0;
+
   }
 
   &--web {
@@ -249,10 +252,6 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
-
-  // &:last-child {
-  //   margin-bottom: 302px;
-  // }
 }
 
 .menu__link {
@@ -312,6 +311,7 @@
 
 .menu__socials {
   display: flex;
+  flex-wrap: wrap;
 
  
  
@@ -319,7 +319,7 @@
 
 .menu__social {
   &:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
 
@@ -336,12 +336,23 @@
 
   color: $firm-color;
 
+
+  //  Почему-то не работает формула not(:last-child):after
   &::after {
     content: "";
-    // width: 0;
+    width: 0;
     height: 22px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     margin-left: 10px;
   }
+
+  // &::after {
+  //   content: "";
+  //   width: 0;
+  //   height: 22px;
+  //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  //   margin-left: 10px;
+   
+  // }
 
 }

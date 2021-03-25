@@ -236,7 +236,12 @@
                 <ul class="list services__list">    
                     <li class="services__item">
                         <a href="">
-                            <img src="./images/usluga1.jpg" alt="" width="370"/>
+                            <img 
+                            srcset="./images/usluga1.jpg, ./images/usluga1@2x.jpg"
+                            src="./images/usluga1.jpg" 
+                            alt="Десктопные приложения" 
+                            width="370"
+                            height="294"/>
                         </a>
                         <div class="services__info">
                             <p class="services__text">Десктоптные приложения</p>
@@ -245,7 +250,12 @@
 
                     <li class="services__item">
                         <a href="">
-                            <img src="./images/usluga2.jpg" alt="" width="370"/>
+                            <img 
+                            srcset="./images/usluga2.jpg, ./images/usluga2@2x.jpg"
+                            src="./images/usluga2.jpg" 
+                            alt="Мобильные приложения" 
+                            width="370"
+                            height="294"/>
                         </a>
                         <div class="services__info">
                             <p class="services__text">Мобильные приложения</p>
@@ -254,7 +264,12 @@
                     
                     <li class="services__item">
                         <a href="">
-                            <img src="./images/usluga3.jpg" alt="" width="370"/>
+                            <img 
+                            srcset="./images/usluga3.jpg, ./images/usluga3@2x.jpg"
+                            src="./images/usluga3.jpg" 
+                            alt="Дизайнерские решения"
+                            width="370"
+                            height="294"/>
                         </a>
                          <div class="services__info">
                             <p class="services__text">Дизайнерские решения</p>
@@ -272,43 +287,58 @@
             <ul class="list team__list">
 
                 <li class="team__card"> 
-                    <img class="team__image" src="./images/korban1.jpg" alt=""/>
-                    <h3 class="team__member">Игорь Демьяненко</h3>
-                    <p class="team__skill"><span lang="en">Product Designer</span></p>
-                    <ul class="list social__list">
-                        <li>
-                            <a class="social__link" href="">
-                                <svg class="social__svg social__svg--instagram" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="social__link" href="">
-                                <svg class="social__svg social__svg--twitter" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="social__link" href="">
-                                <svg class="social__svg social__svg--facebook" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="">
-                            <a class="social__link" href="">
-                                <svg class="social__svg social__svg--linkedin" width="20" height="20">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="team__thumb" >
+                        <img class="team__image"
+                        srcset="./images/korban1-270.jpg 1x, ./images/korban1-540.jpg 2x"
+                        src="./images/korban1-270.jpg" 
+                        width="450"
+                        height="460"
+                        alt="Фото члена команды"/>
+                    </div>
+
+                        <h3 class="team__member">Игорь Демьяненко</h3>
+                        <p class="team__skill"><span lang="en">Product Designer</span></p>
+                        <ul class="list social__list">
+                            <li>
+                                <a class="social__link" href="">
+                                    <svg class="social__svg social__svg--instagram" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg social__svg--twitter" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg social__svg--facebook" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="social__link" href="">
+                                    <svg class="social__svg social__svg--linkedin" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    
                 </li>
 
                 <li class="team__card">
-                    <img class="team__image" src="./images/lilu2.jpg" alt=""/>
+                    <img class="team__image"
+                        srcset="./images/lilu2-270.jpg 1x, ./images/lilu2-540.jpg 2x"
+                        src="./images/lilu2-270.jpg" 
+                        width="450"
+                        height="460"
+                        alt="Фото члена команды"/>
+
                     <h3 class="team__member">Ольга Репина</h3>
                     <p class="team__skill"><span lang="en">Frontend Developer</span></p>
                     <ul class="list social__list">
@@ -344,7 +374,13 @@
                 </li>
 
                 <li class="team__card">
-                    <img class="team__image" src="./images/korban3.jpg" alt=""/>
+                    <img class="team__image"
+                        srcset="./images/korban3-270.jpg 1x, ./images/korban3-540.jpg 2x"
+                        src="./images/korban3-270.jpg" 
+                        width="450"
+                        height="460"
+                        alt="Фото члена команды"/>
+
                     <h3 class="team__member">Николай Тарасов</h3>
                     <p class="team__skill"><span lang="en">Marketing</span></p>
                     <ul class="list social__list">
@@ -380,7 +416,13 @@
                 </li>
 
                 <li class="team__card">
-                    <img class="team__image" src="./images/korban4.jpg" alt=""/>
+                    <img class="team__image"
+                        srcset="./images/korban4-270.jpg 1x, ./images/korban4-540.jpg 2x"
+                        src="./images/korban4-270.jpg" 
+                        width="450"
+                        height="460"
+                        alt="Фото члена команды"/>
+
                     <h3 class="team__member">Михаил Ермаков</h3>
                     <p class="team__skill"><span lang="en">UI Designer</span></p>
                     <ul class="list social__list">

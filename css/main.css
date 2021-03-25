@@ -107,22 +107,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .header__logo {
-  padding: 24px 0 25px 0;
+  padding: 16px 0;
 }
 
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
+    padding: 26px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    padding: 24px 0 25px 0;
   }
 }
 
@@ -419,10 +420,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .menu__social:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .socials__item {
@@ -439,6 +442,7 @@ img {
 
 .socials__item::after {
   content: "";
+  width: 0;
   height: 22px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
@@ -449,13 +453,13 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  border: 1px;
-  border-color: #ECECEC;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-480.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480.jpg);
+  border: 1px;
+  border-color: #ECECEC;
 }
 
 @media screen and (min-width: 1200px) {
@@ -466,9 +470,34 @@ img {
   }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../images/hero-960@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/hero-768.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(../images/hero-1536@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    background-image: url(/images/hero-1600.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url(/images/hero-3200@2x.jpg);
   }
 }
 
@@ -1002,6 +1031,10 @@ textarea {
   }
 }
 
+.team__thumb {
+  max-height: 460px;
+}
+
 .team__title {
   margin-bottom: 30px;
 }
@@ -1022,7 +1055,6 @@ textarea {
 }
 
 .team__image {
-  width: 100%;
   margin-bottom: 30px;
 }
 
