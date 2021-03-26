@@ -471,7 +471,7 @@ img {
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: url(../images/hero-960@2x.jpg);
   }
 }
@@ -483,7 +483,7 @@ img {
 }
 
 @media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: url(../images/hero-1536@2x.jpg);
   }
 }
@@ -496,7 +496,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero .hero {
+  .hero {
     background-image: url(/images/hero-3200@2x.jpg);
   }
 }
