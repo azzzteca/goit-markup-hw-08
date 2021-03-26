@@ -190,6 +190,7 @@
 
   transform: translateX(100%);
   transition: transform 250ms $cubic-bezier;
+  z-index: 1;
 }
 
 .menu__container.is-open {
@@ -312,8 +313,6 @@
 .menu__socials {
   display: flex;
   flex-wrap: wrap;
-
- 
  
 }
 
